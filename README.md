@@ -8,7 +8,7 @@ mv ~/.vimrc ~/.vimrc.bak
 mv ~/.gvimrc ~/.gvimrc.bak
 ```
 1. Clone the repository.
-`git clone https://github.com/flarnie/dotvim -/.vim`
+`git clone https://github.com/flarnie/dotvim ~/.vim`
 
 2. Create symlinks to the nested `.vimrc` and `.gvimrc` directories.
 ```
