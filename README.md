@@ -1,6 +1,12 @@
 #Vim Configurations
 
 ##Set Up
+0. **Back up your old configs.** :)
+```
+mv ~/.vim ~/.vimbak
+mv ~/.vimrc ~/.vimrc.bak
+mv ~/.gvimrc ~/.gvimrc.bak
+```
 1. Clone the repository.
 `git clone https://github.com/flarnie/dotvim -/.vim`
 
