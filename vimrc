@@ -34,11 +34,18 @@ set backspace=indent,eol,start
 " to save changed files.
 set confirm
 
+" Automatically load external changes to files that don't have unsaved changes
+set autoread
+
 " Remove trailing whitespace on save
 augroup RemoveTrailingWhitespace
   autocmd!
   autocmd BufWritePre * :%s/\s\+$//e
 augroup END
+
+" Wrap whitespace
+set wrap
+set linebreak
 
 " Turn off paste mode when leaving insert mode
 augroup DisablePasteModeWhenLeavingInsertMode
