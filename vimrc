@@ -62,6 +62,20 @@ filetype plugin indent on
 " Turn on syntax highlighting
 syntax on
 
+" Miami theme for colors
+" https://github.com/rf-/vimfiles/blob/master/colors/miami.vim
+function! DarkTheme()
+  set background=dark
+  color miami
+endfunction
+
+function! LightTheme()
+  set background=light
+  color miami
+endfunction
+
+call DarkTheme()
+
 """Searching"""
 
 " turn on incremental search, MEANING
