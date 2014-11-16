@@ -1,3 +1,7 @@
+" pathogen has to be set up before we enable filetype recognition
+call pathogen#infect()
+call pathogen#helptags()
+
 " vim has 197 options you can set
 " @see www.linuxjournal.com/article/3805
 
@@ -64,7 +68,9 @@ set ruler
 set colorcolumn=80
 
 " Tell Vim to read per-filetype settings from 'ftplugin' and 'indent' dir.s
-filetype plugin indent on
+if has("autocmd")
+  filetype plugin indent on
+endif
 
 " Turn on syntax highlighting
 syntax on
