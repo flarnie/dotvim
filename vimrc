@@ -1,13 +1,13 @@
-" pathogen has to be set up before we enable filetype recognition
-call pathogen#infect()
-call pathogen#helptags()
-
 " vim has 197 options you can set
 " @see www.linuxjournal.com/article/3805
 
 """Usability"""
 " Don't support VI - saves us from running into unexpected configuration.
 set nocompatible
+
+" pathogen has to be set up before we enable filetype recognition
+call pathogen#infect()
+call pathogen#helptags()
 
 " keep command line in center of screen.
 set scrolloff=10
@@ -105,3 +105,12 @@ call DarkTheme()
 
 """Random Fun"""
 command! Status echo "All systems are go!"
+
+"""Ctrl P"""
+" https://github.com/kien/ctrlp.vim
+let g:ctrlp_map = '<space>'
+let g:ctrlp_working_path_mode = 'c'
+" Exclude files and directories using Vim's wildignore and CtrlP's own
+" g:ctrlp_custom_ignore:
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
