@@ -15,7 +15,12 @@ mv ~/.gvimrc ~/.gvimrc.bak
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 ```
-3. Make sure the syntastic checkers are installed:
+
+3. Pull down the submodules:
+`git submodule init`
+`git submodule update`
+
+4. Make sure the syntastic checkers are installed:
 [SCSS-Lint][scss-lint]
 [JSX-Hint][jsx-hint]
 
