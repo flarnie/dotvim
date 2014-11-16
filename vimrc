@@ -97,3 +97,5 @@ call DarkTheme()
 " Highlight matching search results
 :set hlsearch
 
+"""Random Fun"""
+command! Status echo "All systems are go!"
