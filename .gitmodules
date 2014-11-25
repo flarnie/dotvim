@@ -13,3 +13,6 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
+[submodule "bundle/import-js"]
+	path = bundle/import-js
+	url = https://github.com/trotzig/import-js.git
