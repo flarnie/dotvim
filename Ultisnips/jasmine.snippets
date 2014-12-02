@@ -31,3 +31,13 @@ endsnippet
 snippet exp "expect() assertion"
 expect(${1})${2}.to${3}(${0:${VISUAL}});
 endsnippet
+
+global !p
+def pascal_case_basename(basename):
+    cleaned_name = re.sub('(_spec)?(\.js$)?', '', basename or 'ModuleName')
+    return ''.join(x.title() for x in cleaned_name.split('_'))
+endglobal
+
+snippet sub "this.subject" b
+this.subject = () => Utils.render(<${1:`!p snip.rv = pascal_case_basename(snip.basename)`} {...this.props} />);$0
+endsnippet
