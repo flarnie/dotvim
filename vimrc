@@ -20,4 +20,7 @@ command! Status echo "All systems are go!"
 "  - plugin/usability.vim
 "  - plugin/readability.vim
 "  - plugin/search-settings.vim
-"  - plugin/vim-colors-miami.vim
+
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
