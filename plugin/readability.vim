@@ -5,8 +5,11 @@ set number
 " Adds line/char count on bottom right.
 set ruler
 
-" turn on the character delimiter at 80 characters.
-set colorcolumn=80
+" turn on the character delimiter to match the textwidth
+" (textwidth is custom set for some filetypes)
+set colorcolumn=+0
+
+set textwidth=80
 
 " Turn on syntax highlighting
 syntax on
