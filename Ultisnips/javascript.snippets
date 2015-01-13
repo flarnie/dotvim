@@ -87,3 +87,138 @@ endsnippet
 snippet me "module.exports" b
 module.exports = ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`};$0
 endsnippet
+
+# Jasmine
+
+
+snippet des "describe() block"
+describe('${1}', () => {
+	${0:${VISUAL}}
+});
+endsnippet
+
+snippet con "context() block"
+context('${1}', () => {
+	${0:${VISUAL}}
+});
+endsnippet
+
+snippet bef "beforeEach() block"
+beforeEach(() => {
+	${0:${VISUAL}}
+});
+endsnippet
+
+snippet aft "afterEach() block"
+afterEach(() => {
+	${0:${VISUAL}}
+});
+endsnippet
+
+snippet it "it() block"
+it('${1}', () => {
+	${0:${VISUAL}}
+});
+endsnippet
+
+snippet exp "expect() assertion"
+expect(${1})${2}.to${3}(${0:${VISUAL}});
+endsnippet
+
+global !p
+def pascal_case_basename(basename):
+    cleaned_name = re.sub('(_spec)?(\.js$)?', '', basename or 'ModuleName')
+    return ''.join(x.title() for x in cleaned_name.split('_'))
+endglobal
+
+snippet sub "this.subject" b
+this.subject = () => Utils.render(<${1:`!p snip.rv = pascal_case_basename(snip.basename)`} {...this.props} />);$0
+endsnippet
+
+# JSX
+
+snippet cdm "componentDidMount" b
+componentDidMount: function() {
+	$0
+},
+endsnippet
+
+snippet cdu "componentDidUpdate" b
+/**
+ * @param {Object} prevProps
+ * @param {Object} prevState
+ */
+componentDidUpdate: function(prevProps, prevState) {
+	$0
+},
+endsnippet
+
+snippet cwm "componentWillMount" b
+componentWillMount: function() {
+	$0
+},
+endsnippet
+
+snippet cwrp "componentWillReceiveProps" b
+/**
+ * @param {Object} nextProps
+ */
+componentWillReceiveProps: function(nextProps) {
+	$0
+},
+endsnippet
+
+snippet cwum "componentWillUnmount" b
+componentWillUnmount: function() {
+	$0
+},
+endsnippet
+
+snippet cwu "componentWillUpdate" b
+/**
+ * @param {Object} nextProps
+ * @param {Object} nextState
+ */
+componentWillUpdate: function(nextProps, nextState) {
+	$0
+},
+endsnippet
+
+snippet gdp "getDefaultProps" b
+/**
+ * @return {Object}
+ */
+getDefaultProps: function() {
+	return {
+		$0
+	};
+},
+endsnippet
+
+snippet gis "getInitialState" b
+/**
+ * @return {Object}
+ */
+getInitialState: function() {
+	return {
+		$0
+	};
+},
+endsnippet
+
+snippet pt "propTypes" b
+propTypes: {
+	$0
+},
+endsnippet
+
+snippet scu "shouldComponentUpdate" b
+/**
+ * @param {Object} nextProps
+ * @param {Object} nextState
+ * @return {boolean}
+ */
+shouldComponentUpdate: function(nextProps, nextState) {
+	return ${1:true};
+},
+endsnippet
