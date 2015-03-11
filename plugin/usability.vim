@@ -85,3 +85,6 @@ endif
 
 " turn off bracket matching, because it makes Vim slower
 let g:loaded_matchparen=1
+
+" \\ -- open last buffer
+nnoremap <leader><leader> <C-^>
