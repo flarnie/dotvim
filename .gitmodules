@@ -40,3 +40,6 @@
 [submodule "ack.vim"]
 	path = ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/localvimrc"]
+	path = bundle/localvimrc
+	url = https://github.com/embear/vim-localvimrc.git
