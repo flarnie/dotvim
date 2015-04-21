@@ -32,17 +32,15 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 `git submodule add https://github.com/tpope/vim-surround.git bundle/surround`
 
 **Remove a plugin**
-[from blog post by David Walsh][remove-git-submodule]
+[from StackOverflow post][remove-git-submodule]
 
-1. Delete the section from the `.gitmodules` file.
-2. `git add .gitmodules`
-3. Delete the section from `.git/config` locally.
-4. Run `git rm --cached path/to/submodule`.  Don't include a trailing slash --
-   that will lead to an error.
-5. `rm -rf .git/modules/submodule-name`
-6. If you want to actually remove the plugin locally: `rm -rf path/to/submodule`.
+1. `git submodule deinit asubmodule `
+2. `git rm asubmodule`
+3. `rm -rf .git/modules/asubmodule`
 
-[remove-git-submodule]: http://davidwalsh.name/git-remove-submodule
+**Note:** This depends on using git version 1.8.5.
+
+[remove-git-submodule]: http://stackoverflow.com/a/16162000
 
 ##Resources
  - [Vimcasts: Synchronizing Plugins with Git Submodules and Pathogen][vimcast-pathogen]
