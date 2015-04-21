@@ -16,5 +16,4 @@ let g:syntastic_style_warning_symbol = '⚠'
 " Syntax checkers
 let g:syntastic_scss_checkers = ['scss_lint']
 
-let g:syntastic_javascript_checkers  = ['jsxhint', 'jscs']
-let g:syntastic_javascript_jscs_exec = 'jscs'
+let g:syntastic_javascript_checkers  = ['eslint']
