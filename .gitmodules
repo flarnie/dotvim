@@ -40,3 +40,6 @@
 [submodule "ack.vim"]
 	path = ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-projectionist"]
+	path = bundle/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist.git

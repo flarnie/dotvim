@@ -21,5 +21,4 @@ command! Status echo "All systems are go!"
 "  - plugin/readability.vim
 "  - plugin/search-settings.vim
 
-let g:solarized_termcolors=256
 set background=dark
