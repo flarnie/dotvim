@@ -1,3 +1,24 @@
+# Imports python helpers (like pascal_case_basename)
+global !p
+from snippet_helpers import *
+endglobal
+
+# React component boilerplate
+snippet cc "createClass" b
+const ${1:`!p snip.rv = pascal_case_basename(snip.basename)`} = React.createClass({
+	/**
+	 * @return {Object}
+	 */
+	render() {
+		return (
+			$0
+		);
+	}
+});
+
+module.exports = $1;
+endsnippet
+
 # Loops
 
 snippet for "for loop" !

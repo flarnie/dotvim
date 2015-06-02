@@ -88,3 +88,6 @@ let g:loaded_matchparen=1
 
 " \\ -- open last buffer
 nnoremap <leader><leader> <C-^>
+
+" \e -- edit file, starting in same directory as current file
+nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
