@@ -13,3 +13,6 @@ set textwidth=80
 
 " Turn on syntax highlighting
 syntax on
+
+" Auto-indent after numbered lists
+set formatoptions+=n
