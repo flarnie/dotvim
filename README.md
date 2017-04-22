@@ -1,6 +1,7 @@
-#Vim Configurations
+# Vim Configurations
 
-##Set Up
+## Set Up
+
 0. **Back up your old configs.** :)
 ```
 mv ~/.vim ~/.vimbak
@@ -28,6 +29,7 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 [jsx-hint]: https://github.com/CondeNast/JSXHint
 
 ## Managing Plugins
+
 **Add a plugin**
 `git submodule add https://github.com/tpope/vim-surround.git bundle/surround`
 
@@ -42,7 +44,8 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 
 [remove-git-submodule]: http://stackoverflow.com/a/16162000
 
-##Resources
+## Resources
+
  - [Vimcasts: Synchronizing Plugins with Git Submodules and Pathogen][vimcast-pathogen]
 
 [vimcast-pathogen]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
