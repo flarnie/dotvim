@@ -37,3 +37,6 @@
 [submodule "bundle/vim-bracketed-paste"]
 	path = bundle/vim-bracketed-paste
 	url = https://github.com/ConradIrwin/vim-bracketed-paste
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/command-t.git
