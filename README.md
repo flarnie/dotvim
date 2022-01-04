@@ -44,7 +44,7 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 
 [remove-git-submodule]: http://stackoverflow.com/a/16162000
 
-**Getting Solarized To Work on Mac**
+## Getting Solarized To Work on Mac
 
 The solarized theme will not "just work" with the default mac terminal in my
 experience. Here is what I've done to get it working when I use Vim in the
@@ -53,6 +53,10 @@ terminal;
 - Set up the solarized colors for iterm2. Now when you open Vim it should "just work" with the solarized theme.
 
 [1]: https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c
+
+## Plugins
+
+WIP documenting which plugins are used and why.
 
 ## Resources
 
