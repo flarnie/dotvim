@@ -22,3 +22,7 @@ command! Status echo "All systems are go!"
 "  - plugin/search-settings.vim
 
 set background=dark
+
+" Set up the :FZF shortcut for fuzzy find
+" requires installing fzf for command line
+set rtp+=/usr/local/opt/fzf
