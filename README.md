@@ -28,6 +28,11 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 [scss-lint]: https://github.com/causes/scss-lint
 [jsx-hint]: https://github.com/CondeNast/JSXHint
 
+5. Install fzf for fuzzy find.
+[install with homebrew][fzf-install-homebrew]
+
+[fzf-install-homebrew]: https://github.com/junegunn/fzf#using-homebrew
+
 ## Managing Plugins
 
 **Add a plugin**
